@@ -1,0 +1,374 @@
+.profile-head {
+    transform: translateY(5rem)
+}
+
+.cover {
+    background-image: url(https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    background: #830e0e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2a0845, #830e0e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a0845, #830e0e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(to right, #e96443, #904e95); */
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* background-image: url('https://c4.wallpaperflare.com/wallpaper/597/160/849/colorful-stripes-rainbow-vertical-wallpaper-preview.jpg'); */
+}
+
+.container3 #custom-btn {
+    /* margin-top: 30px; */
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: linear-gradient(135deg, #3a8ffe 0%, #9658fe 100%);
+}
+
+.feeds {
+    background-color: white;
+    border-radius: 30px;
+    width: 800px;
+    height: 1000px;
+    margin-left: 50px;
+}
+
+.feeds .music-container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.feeds .music-container .box {
+    height: 8rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem #000;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 2rem;
+}
+
+.feeds .music-container .box .image {
+    height: 100%;
+    width: 25%;
+}
+
+.feeds .music-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.feeds .music-container .box .music {
+    margin-top: 50px;
+    width: 75%;
+}
+
+.feeds .music-container .box .music p {
+    font-size: 25px;
+    margin-left: 40%;
+}
+
+.feeds .music-container .box .music audio {
+    width: 100%;
+    outline: none;
+}
+
+.feeds .music-container .box .music audio::-webkit-media-controls-enclosure {
+    background: none;
+}
+
+
+/* drop down */
+
+.navbar-nav li {
+    transform: translateX(100rem);
+    animation: slideIn .5s forwards;
+}
+
+.navbar-nav li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.navbar-nav li:nth-child(2) {
+    animation-delay: .5s;
+}
+
+.navbar-nav li:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.navbar-nav li:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.navbar-nav li:nth-child(5) {
+    animation-delay: 2s;
+}
+
+.navbar-nav li:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+.navbar-nav li a:last-child {
+    margin-right: 0;
+}
+
+@keyframes slideIn {
+    from {}
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/* nav bar */
+
+.container2 {
+    max-width: 70rem;
+    /* padding: 0 2rem; */
+    margin: 0 auto;
+}
+
+.container2 h3 {
+    font-size: 50px;
+    margin-left: 75%;
+    margin-top: -10px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+    background: linear-gradient(to bottom, rgba( 0, 0, 0, 0.3), transparent)
+}
+
+nav .container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    top: 50%;
+    color: #fff;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    font-weight: 300;
+}
+
+.box-menu {
+    position: absolute;
+    /* left: 50px; */
+    top: 10px;
+    cursor: pointer;
+    background: #49A4EB;
+    width: 60px;
+    height: 60px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, .3);
+    border-radius: 60px;
+    transition: height .4s;
+}
+
+.wrapper {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.full-menu {
+    height: 300px;
+}
+
+
+/*ГАМБУРГЕР*/
+
+.hamburger {
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    width: 16px;
+    height: 16px;
+    z-index: 20;
+}
+
+.hamburger span {
+    position: absolute;
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    /*transition: top .3s, transform .3s, left .3s, width .3s;*/
+    transition: all .3s;
+}
+
+.hamburger span:nth-child(1) {
+    top: 3px;
+}
+
+.hamburger span:nth-child(2) {
+    top: 8px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 8px;
+}
+
+.hamburger span:nth-child(4) {
+    top: 13px;
+}
+
+.hamburger.active span:nth-child(1) {
+    width: 0;
+    margin-left: 8px;
+}
+
+.hamburger.active span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(4) {
+    width: 0;
+    margin-left: 8px;
+}
+
+
+/*ОСНОВНОЕ МЕНЮ*/
+
+.menu {
+    position: relative;
+    left: -9999px;
+}
+
+.menu a {
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    padding-left: 20px;
+    width: 150px;
+    height: 58px;
+    line-height: 58px;
+    font-family: 'Poppins';
+    color: white;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    left: 57px;
+    top: 29px;
+    height: 0px;
+    width: 3px;
+    background: #fff;
+    transition: height .3s, top .3s;
+}
+
+.menu a.active::after {
+    top: 19px;
+    height: 20px;
+}
+
+.menu a span {
+    opacity: 0;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.menu a span.icon {
+    transform: scale(.5);
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    transition: transform .3s;
+}
+
+.menu a span.text {
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, .3);
+    opacity: 0;
+    margin-left: 40px;
+    transition: margin .3s, opacity .3s, transform .3s;
+}
+
+.full-menu .menu {
+    left: 0;
+}
+
+
+/* .full-menu .menu a {
+    /*opacity: .8;
+} */
+
+.full-menu .menu a:hover span {
+    opacity: 1;
+}
+
+.full-menu .menu a span {
+    opacity: .8;
+}
+
+.full-menu .menu a span.icon {
+    transform: scale(1.1);
+}
+
+.full-menu .menu a span.text {
+    margin-left: 25px;
+    /*opacity: .7;*/
+}
+
+.full-menu .menu a:hover span.text {
+    /*margin-left: 30px;*/
+    transform: translateX(5px);
+    transition-delay: 0s;
+}
+
+
+/*Анимация меню*/
+
+.menu a:nth-child(1) span {
+    transition: all .5s .1s, opacity .5s 0s, transform .5s 0s;
+}
+
+.menu a:nth-child(2) span {
+    transition: all .5s .15s, opacity .5s 0s, transform .5s 0s;
+}
+
+.menu a:nth-child(3) span {
+    transition: all .5s .2s, opacity .5s 0s, transform .5s 0s;
+}
+
+.menu a:nth-child(4) span {
+    transition: all .5s .25s, opacity .5s 0s, transform .5s 0s;
+}

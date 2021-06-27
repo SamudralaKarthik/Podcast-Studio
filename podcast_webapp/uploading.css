@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #830e0e; /* fallback for old browsers /
+    background: -webkit-linear-gradient(to right, #2a0845, #830e0e); / Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a0845, #830e0e); 
+}
+.container2 {
+    max-width: 70rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    overflow: hidden;
+}
+
+header:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 25;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 30;
+    background: linear-gradient(to bottom, rgba( 0, 0, 0, 0.9), transparent)
+}
+
+nav .container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    font-weight: 300;
+}
+
+.hamburger-menu {
+    padding-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.reg-form h3 {
+    font-size: 30px;
+    padding-top: 100px;
+    padding-left: 170px;
+}
+
+.reg-form span {
+    font-weight: 300;
+}
+
+.input {
+    padding: 50px 30px 20px 30px;
+}
+
+input[type=text],
+select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.vl {
+    border-left: 1px solid grey;
+    height: 500px;
+    position: absolute;
+    left: 60%;
+    margin-left: -3px;
+    top: 150px;
+}
+
+.btn {
+    width: 150px;
+    background-color: #5995fd;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #4d84e2;
+}
+
+
+/*upload image*/
+
+.body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+}
+
+.container3 {
+    height: 350px;
+    width: 430px;
+    position: relative;
+}
+
+.container3 .wrapper {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+    border: 2px dashed #c2cdda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.wrapper.active {
+    border: none;
+}
+
+.wrapper .image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper .icon {
+    font-size: 100px;
+    color: #9658fe;
+}
+
+.wrapper .text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #5B5B7B;
+}
+
+.wrapper #cancel-btn i {
+    position: absolute;
+    font-size: 20px;
+    right: 15px;
+    top: 15px;
+    color: #9658fe;
+    cursor: pointer;
+    display: none;
+}
+
+.wrapper.active:hover #cancel-btn i {
+    display: block;
+}
+
+.wrapper #cancel-btn i:hover {
+    color: #e74c3c;
+}
+
+.wrapper .file-name {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 18px;
+    color: #fff;
+    display: none;
+    background: linear-gradient(135deg, #3a8ffe 0%, #9658fe 100%);
+}
+
+.wrapper.active:hover .file-name {
+    display: block;
+}
+
+.container3 #custom-btn {
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+    height: 20px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: linear-gradient(135deg, #3a8ffe 0%, #9658fe 100%);
+}
+
+
+
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+
+.box-menu {
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    cursor: pointer;
+    background: #49A4EB;
+    width: 60px;
+    height: 60px;
+    box-shadow: 2px 3px 5px rgba(0,0,0,.3);
+    border-radius: 60px;
+    transition: height .4s;
+}
+
+.wrapper {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+/*ГАМБУРГЕР*/
+.hamburger {
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    width: 16px;
+    height: 16px;
+    z-index:20;
+}
+
+    .hamburger span {
+        position: absolute;
+        display: inline-block;
+        height: 2px;
+        width: 100%;
+        background: #fff;
+        border-radius: 10px;
+        /*transition: top .3s, transform .3s, left .3s, width .3s;*/
+        transition: all .3s;
+    }
+
+        .hamburger span:nth-child(1) {
+            top: 3px;
+        }
+
+        .hamburger span:nth-child(2) {
+            top: 8px;
+        }
+
+        .hamburger span:nth-child(3) {
+            top: 8px;
+        }
+
+        .hamburger span:nth-child(4) {
+            top: 13px;
+        }
+
+    .hamburger.active span:nth-child(1) {
+        width: 0;
+        margin-left: 8px;
+    }
+
+    .hamburger.active span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .hamburger.active span:nth-child(4) {
+        width: 0;
+        margin-left: 8px;
+    }
+
+/*ОСНОВНОЕ МЕНЮ*/
+.menu {
+    position: relative;
+    left: -9999px;
+}
+
+    .menu a {
+        white-space: nowrap;
+        position: relative;
+        display: inline-block;
+        color: #333;
+        text-decoration: none;
+        padding-left:20px;
+        width: 150px;
+        height: 58px;
+        line-height: 58px;
+        font-family: 'Poppins';
+        color: white;
+    }
+
+        .menu a::after {
+            content: '';
+            position: absolute;
+            left: 57px;
+            top: 29px;
+            height: 0px;
+            width: 3px;
+            background: #fff;
+            transition: height .3s, top .3s;
+        }
+
+        .menu a.active::after {
+            top: 19px;
+            height: 20px;
+        }
+
+        .menu a span {
+            opacity: 0;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+            .menu a span.icon {
+                transform: scale(.5);
+                color: #fff;
+                font-size: 18px;
+                display: inline-block;
+                width: 60px;
+                text-align: center;
+                transition: transform .3s;
+            }
+
+            .menu a span.text {
+                text-shadow: 1px 1px 0px rgba(0,0,0,.3);
+                opacity: 0;
+                margin-left: 40px;
+                transition: margin .3s, opacity .3s, transform .3s;
+            }
+
+/*Развернутое меню*/
+.full-menu .menu {
+    left: 0;
+}
+
+    .full-menu .menu a {
+        /*opacity: .8;*/
+    }
+
+        .full-menu .menu a:hover span {
+            opacity: 1;
+        }
+
+        .full-menu .menu a span {
+            opacity: .8;
+        }
+
+            .full-menu .menu a span.icon {
+                transform: scale(1.1);
+            }
+
+            .full-menu .menu a span.text {
+                margin-left: 25px;
+                /*opacity: .7;*/
+            }
+
+        .full-menu .menu a:hover span.text {
+            /*margin-left: 30px;*/
+            transform: translateX(5px);
+            transition-delay: 0s;
+        }
+
+/*Анимация меню*/
+.menu a:nth-child(1) span {
+    transition: all .5s .1s, opacity .5s 0s, transform .5s 0s;
+}
+
+.menu a:nth-child(2) span {
+    transition: all .5s .15s, opacity .5s 0s, transform .5s 0s;
+}
+
+.menu a:nth-child(3) span {
+    transition: all .5s .2s, opacity .5s 0s, transform .5s 0s;
+}
+
+.menu a:nth-child(4) span {
+    transition: all .5s .25s, opacity .5s 0s, transform .5s 0s;
+}
